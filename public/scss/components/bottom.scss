@@ -1,0 +1,83 @@
+@import "../theme/abstracts";
+
+.content-bottom {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0 $spacing-big;
+
+  @media #{$gl-xs-sm} {
+    flex-flow: column nowrap;
+  }
+  
+  .row {
+    margin: $spacing-small;
+        
+    .row-content {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      font-size: 20px;
+    }
+    
+    .row-bar {
+      height: 20px;
+      background-color: $_color-gray;
+      overflow: hidden;
+      border-radius: 40px;
+      margin: ($spacing-small / 2) 0 $spacing-small;
+      position: relative;
+      
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        transition: width 0.5s;
+
+      }
+    }
+  }
+  
+  &.selection-basic {
+    .row-bar {
+      span {
+        width: 5%;
+        background-color: $_color-blue;
+        height: 20px;
+      }
+    }
+  }
+  
+  &.selection-pro {
+    .row {
+      .row-bar {
+        span {
+          width: 30%;
+          background-color: $_color-blue;
+          height: 20px;
+        }
+      }
+      &:nth-child(2) {
+        .row-bar span {
+          width: 70%;
+        }
+      }
+      
+      &:last-child {
+        .row-bar span {
+          width: 50%;
+        }
+      }
+    }
+  }
+  
+  &.selection-premium {
+    .row-bar {
+      span {
+        width: 100%;
+        background-color: $_color-blue;
+        height: 20px;
+      }
+    }
+  }
+}

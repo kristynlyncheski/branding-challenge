@@ -1,0 +1,15 @@
+@import "../theme/abstracts";
+
+.box-wrapper {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: 0 ($spacing-small / 2);
+
+  .box {
+    background-color: $_color-white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(94,94,94,.3);
+  }
+}

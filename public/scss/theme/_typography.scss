@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./mixins";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $_color-black;
+  font-family: $font-primary;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: $_color-blue;
+  text-decoration: none;
+}
+
+p {
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
