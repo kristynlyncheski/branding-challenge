@@ -1,0 +1,63 @@
+@import "../theme/abstracts";
+
+
+.content-wrapper {
+  & > .box-wrapper {
+
+    // Basic
+    &:first-child {
+      &:hover {
+        & ~ .content-bottom {
+          .row-bar {
+            span {
+              width: 5%;
+              background-color: $_color-blue;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    // Pro
+    &:nth-child(2) {
+      &:hover {
+        & ~ .content-bottom {
+         .row-bar {
+           span {
+             width: 30%;
+             background-color: $_color-blue;
+             height: 20px;
+           }
+         }
+         &:nth-child(2) {
+           .row-bar span {
+             width: 70%;
+           }
+         }
+
+         &:last-child {
+           .row-bar span {
+             width: 50%;
+           }
+         }
+        }
+      }
+    }
+
+    // Premium
+    &:nth-child(3) {
+      &:hover {
+        & ~ .content-bottom {
+         .row-bar {
+           span {
+             width: 100%;
+             background-color: $_color-blue;
+             height: 20px;
+           }
+         }
+        }
+      }
+    }
+  }
+}

@@ -5,16 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let plans = {
     1: {
-      name: 'basic',
-      percentages: [5, 5, 5]
+      name: 'basic'
     },
     2: {
-      name: 'pro',
-      percentages: [20, 80, 50]
+      name: 'pro'
     },
     3: {
-      name: 'premium',
-      percentages: [100, 100, 100]
+      name: 'premium'
     }
   }
 
