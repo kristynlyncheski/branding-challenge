@@ -4,10 +4,6 @@ html, body {
   height: 100%;
 }
 
-.hide {
-  display: none;
-}
-
 html {
   box-sizing: border-box;
   height: 100%;
@@ -49,10 +45,6 @@ body {
   border-radius: 10px;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   color: #5e5e5e;
   font-family: "Open Sans", sans-serif;
@@ -79,19 +71,13 @@ h2 {
   font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   margin: 0;
 }
 
 a {
   color: #80d0ec;
   text-decoration: none;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .box-wrapper {
